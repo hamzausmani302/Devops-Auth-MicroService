@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34031.279
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DevopsAuthMicroService", "Devops-Auth-MicroService\DevopsAuthMicroService.csproj", "{8A0A707F-008E-4C40-A2D3-E987653406ED}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "DevopsAuthMicroService.Domain", "SharedProject1\DevopsAuthMicroService.Domain.shproj", "{74F607E0-6AB0-4E11-AF78-B512249F39D0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8A0A707F-008E-4C40-A2D3-E987653406ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A0A707F-008E-4C40-A2D3-E987653406ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A0A707F-008E-4C40-A2D3-E987653406ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A0A707F-008E-4C40-A2D3-E987653406ED}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BF87F708-223A-4E07-88A5-AF44B6AAB364}
+	EndGlobalSection
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		SharedProject1\SharedProject1.projitems*{74f607e0-6ab0-4e11-af78-b512249f39d0}*SharedItemsImports = 13
+		SharedProject1\SharedProject1.projitems*{8a0a707f-008e-4c40-a2d3-e987653406ed}*SharedItemsImports = 5
+	EndGlobalSection
+EndGlobal
