@@ -1,0 +1,43 @@
+version: "3.4"
+name: "devopsproject"
+services:
+  devopsauthapi:
+    build:
+      context: .
+      dockerfile: dockerfile
+    ports:
+      - "5178:80"
+      - "7009:443"
+    environment:
+      ASPNETCORE_ENVIRONMENT: "Development"
+    depends_on:
+      - devopsauthdb
+  devopsauthdb:
+    image: "mcr.microsoft.com/mssql/server:2022-latest"
+    ports:
+      - "1433:1433"
+    environment:
+      SA_PASSWORD: "Devops_123"
+      ACCEPT_EULA: "Y"
+    volumes:
+      - D:/work/devops-full-project/DBSpace:/var/opt/mssql/data
+  devopswebapi:
+    build:
+      context: WebApi-BusinessService/.
+      dockerfile: Dockerfile
+    ports:
+      - "5001:80"
+    environment:
+      ASPNETCORE_ENVIRONMENT: "Development"
+    depends_on:
+      - devopsauthdb
+  devopsui:
+    build:
+      context: devops-ui/.
+      dockerfile: DockerFile
+    ports:
+      - "4200:80"
+    environment:
+      AUTH_URL: myrul
+      API_URL: MYAPIURL
+      ENV: dev

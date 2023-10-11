@@ -11,7 +11,7 @@ namespace Devops_Auth_MicroService.Controllers
     [ApiController]
     public class UserController : BaseController
     {
-        public UserController(IUnitOfWork uow , UserManager<IdentityUser> userManager): base(uow)
+        public UserController(IUnitOfWork uow , UserManager<IdentityUser> userManager): base(uow , userManager)
         {
             _userManager = userManager;
         }

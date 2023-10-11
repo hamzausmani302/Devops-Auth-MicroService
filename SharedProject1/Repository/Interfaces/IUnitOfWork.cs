@@ -10,3 +10,4 @@ namespace Devops_Auth_MicroService.Interfaces
         public Task CompleteAsync();
     }
 }
+

@@ -3,22 +3,20 @@ using Microsoft.AspNetCore.Identity;
 
 namespace Devops_Auth_MicroService.Services
 {
-    public class UserService : IUserService
-    {
+    public class UserService : BaseService{
         
-        private IUnitOfWork uow;
+         private IUnitOfWork uow;
         private UserManager<IdentityUser> userManager;
         public UserService(IUnitOfWork uow , UserManager<IdentityUser> userManager)
         {
             this.uow = uow;
             this.userManager = userManager;
         }
-
         public async Task<User> addUser(RegisterViewModel model)
         {
             try
             {
-                User user = await uow.appUserRepo.Add(new User() { Name = model.UserName, Email = model.Email, Password = model.Password, PhoneNumber = "123421312312" });
+                User user = await uow.appUserRepo.Add(new User() {   Id=model.Id.ToString() ,  Name = model.UserName, Email = model.Email, Password = model.Password, PhoneNumber = "123421312312" });
                 
                 return user;
 

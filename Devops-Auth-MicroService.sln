@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DevopsAuthMicroService", "D
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "DevopsAuthMicroService.Domain", "SharedProject1\DevopsAuthMicroService.Domain.shproj", "{74F607E0-6AB0-4E11-AF78-B512249F39D0}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApi-BusinessService", "WebApi-BusinessService\WebApi-BusinessService.csproj", "{F9030CA1-1100-4898-954D-62B4EBB8A504}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,6 +19,10 @@ Global
 		{8A0A707F-008E-4C40-A2D3-E987653406ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8A0A707F-008E-4C40-A2D3-E987653406ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8A0A707F-008E-4C40-A2D3-E987653406ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9030CA1-1100-4898-954D-62B4EBB8A504}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9030CA1-1100-4898-954D-62B4EBB8A504}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9030CA1-1100-4898-954D-62B4EBB8A504}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9030CA1-1100-4898-954D-62B4EBB8A504}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

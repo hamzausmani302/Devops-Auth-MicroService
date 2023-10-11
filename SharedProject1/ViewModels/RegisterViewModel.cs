@@ -3,6 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 public class RegisterViewModel
 {
+    public Guid Id { get; set; }
     [Required]
     [MinLength(0)]
     [MaxLength(40)]

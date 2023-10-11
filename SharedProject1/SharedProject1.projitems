@@ -9,23 +9,23 @@
     <Import_RootNamespace>SharedProject1</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="$(MSBuildThisFileDirectory)Entities\AppUser.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)entities\User.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)entities\UserRefreshToken.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Repository\Interfaces\IAppUserRepo.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Repository\Interfaces\IJWTRepo.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Repository\Interfaces\IGenericRepository.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)repository\interfaces\IJWTRepo.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Repository\Interfaces\IUnitOfWork.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)repository\interfaces\service\IUserService.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Repository\Repos\AppUserRepo.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Repository\Repos\GenericRepository.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)repository\repos\JWTRepo.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Repository\Repos\UnitOfWork.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)viewmodels\LoginViewModel.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)viewmodels\RegisterViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Repository\Repos\JWTRepo.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\LoginViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\RegisterViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)Repository\Interfaces\Service\" />
     <Folder Include="$(MSBuildThisFileDirectory)ViewModels\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Repository\Repos" />
+    <Folder Include="$(MSBuildThisFileDirectory)Repository\Interfaces\" />
   </ItemGroup>
 </Project>

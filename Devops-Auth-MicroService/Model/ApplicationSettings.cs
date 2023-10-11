@@ -1,4 +1,4 @@
-﻿namespace Devops_Auth_MicroService.Model
+﻿namespace Devops_Auth_MicroService.Models
 {
     public class ApplicationSettings
     {

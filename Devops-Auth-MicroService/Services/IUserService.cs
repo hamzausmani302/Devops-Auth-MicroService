@@ -1,3 +1,4 @@
+namespace Devops_Auth_MicroService.Interfaces;
 public interface IUserService
 {
     public Task<User> addUser(RegisterViewModel model);

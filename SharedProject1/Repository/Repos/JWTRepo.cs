@@ -1,4 +1,4 @@
-using Devops_Auth_MicroService.Model;
+
 using Devops_Auth_MicroService.Models;
 using Devops_Auth_MicroService.Repos;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
@@ -35,11 +35,11 @@ public class JWTRepo : GenericRepository<UserRefreshToken>, IJWTRepo
         try
         {
             JwtSecurityTokenHandler handler = new JwtSecurityTokenHandler();
+            //dwadathis is the cmmad
             var tokenKey = Encoding.UTF8.GetBytes(Settings.Key);
             var descriptor = new SecurityTokenDescriptor()
             {
                 Subject = new ClaimsIdentity(
-
                     new Claim[] {
                     new Claim("ID", userId),
                     new Claim("role", "")
@@ -80,4 +80,6 @@ public class JWTRepo : GenericRepository<UserRefreshToken>, IJWTRepo
         }
         return principal;
     }
+
+
 }

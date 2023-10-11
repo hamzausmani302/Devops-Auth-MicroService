@@ -1,0 +1,40 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: backend-auth
+  labels:
+    name: backend-auth
+spec:
+  containers:
+    - name: backend-auth
+      image: hamzausmani021/devopsproject-devopsauthapi
+      resources:
+        limits:
+          memory: "128Mi"
+          cpu: "500m"
+      env:
+        - name: ASPNETCORE_ENVIRONMENT
+          value: "Development"
+      ports:
+        - containerPort: 80
+
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: backend-api
+  labels:
+    name: backend-api
+spec:
+  containers:
+    - name: backend-webapi
+      image: hamzausmani021/devopsproject-devopswebapi
+      resources:
+        limits:
+          memory: "128Mi"
+          cpu: "500m"
+      env:
+        - name: ASPNETCORE_ENVIRONMENT
+          value: "Development"
+      ports:
+        - containerPort: 80

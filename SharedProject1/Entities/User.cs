@@ -6,7 +6,6 @@ using System.ComponentModel.DataAnnotations.Schema;
 [Table("TDL_USER")]
 public class User : IdentityUser
 {
-
     [Column("username")]
     public string Name { get; set; }
     public string Email { get; set; }

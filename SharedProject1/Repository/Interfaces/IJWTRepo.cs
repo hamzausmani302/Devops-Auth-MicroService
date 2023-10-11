@@ -1,5 +1,5 @@
 using Devops_Auth_MicroService.Interfaces;
-using Devops_Auth_MicroService.Model;
+using Devops_Auth_MicroService.Models;
 using System.Security.Claims;
 
 public interface IJWTRepo : IGenericRepository<UserRefreshToken>
@@ -8,6 +8,5 @@ public interface IJWTRepo : IGenericRepository<UserRefreshToken>
     public string GenerateRefreshToken(string userId);
 
     public ClaimsPrincipal GetPrincipalFromExpiredtoken(string token);
-
 
 }
